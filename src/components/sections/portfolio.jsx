@@ -75,7 +75,7 @@ const Card = ({ category, title, src, animationClass, id }) => {
                 <div className="project-item style-two">
                     <div className="project-image">
                         <Image width={383} height={249} sizes='100vw' style={{width:"100%", height:"auto"}} src={src} alt="Project" />
-                        <Link href="/single-project" className="details-btn"><RiArrowRightUpLine /> </Link>
+                        <Link href={{ pathname: '/single-project', query: { id } }} className="details-btn"><RiArrowRightUpLine /> </Link>
                     </div>
                     <div className="project-content">
                         <span className="sub-title">{category}</span>

@@ -16,7 +16,7 @@ const Hero = () => {
                             <div className="about-image-part">
                                 <img src={"/images/about/profile.png"} alt="About Me" />
                                 <h2>Pierre Beaufaron</h2>
-                                <p>Developer & graphic designer</p>
+                                <p>Developer & Graphic Designer</p>
                                 <div className="about-social text-center">
                                     <ul>
                                         <li><Link href=""><RiLinkedinFill size={20} /></Link></li>
@@ -33,7 +33,7 @@ const Hero = () => {
                             <div className="about-content-part">
                                 <p>Hello There!</p>
                                 <h2>
-                                    I’m Pierre Beaufaron, a meticulous junior full stack developer & experienced graphic designer.
+                                    I’m Pierre Beaufaron, a meticulous junior full stack Developer & experienced Graphic Designer.
                                 </h2>
                                 <div className="adress-field">
                                     <ul>

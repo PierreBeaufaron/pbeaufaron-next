@@ -1,15 +1,17 @@
 export const projectsData = [
     {
         id: 1,
-        src: "/images/projects/work1.jpg",
-        category: "Design",
-        title: "Mobile Application Design",
+        src: "/images/projects/cozyliv.png",
+        category: "Development",
+        title: "Cozyliv",
+        description: "Web application for coliving space rentals, aimed at young professionals. The API was developed using PHP Symfony with API Platform, and the database is MySQL. The frontend was built with Angular. I also designed the UI/UX mockup myself using Figma.",
     },
     {
         id: 2,
         src: "/images/projects/work2.jpg",
-        category: "Game",
+        category: "Marketing",
         title: "Website Makeup Design",
+        description: "",
     },
     {
         id: 3,

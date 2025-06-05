@@ -1,20 +1,29 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
+import { projectsData } from '@/utlits/fackData/projectData'
+import { useSearchParams } from 'next/navigation'
 
 const SingleProject = () => {
+    const searchParams = useSearchParams()
+    const id = searchParams.get('id')
+    const project = projectsData.find(p => p.id === parseInt(id))
+
+    if (!project) {
+        return <p className="text-center mt-20">Project not found</p>
+    }
     return (
         <div className="single-project-page-design">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12 text-center pb-30">
-                        <p>BRANDING - BENTO STUDIO</p>
-                        <h1>Beautiful design for brand
-                            new Business</h1>
+                        <p>{project.category}</p>
+                        <h1>{project.title}</h1>
                     </div>
                 </div>
             </div>
             <div className="single-project-image">
-                <Image width={1095} height={1072} sizes='100vw' style={{width:"100%", height:"auto"}} src={"/images/projects/single-project.jpg"} alt="image" />
+                <Image width={1095} height={1072} sizes='100vw' style={{width:"100%", height:"auto"}} src={project.src} alt="image" />
             </div>
             <div className="container pt-30">
                 <div className="row">
@@ -46,8 +55,7 @@ const SingleProject = () => {
                             <h2>
                                 Description
                             </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit utsadi sfejdis aliquam, purus sit amet luctus venenatis, lectus magna sansit trandis fringilla urna, porttitor rhoncus dolor purus non enim dollors praesent tabasi elementum facilisis leo.</p>
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable sourc consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                            <p>{project.description}</p>
                         </div>
                     </div>
                     {/* <!-- / END SINGLE RIGHT DESIGN AREA --> */}

@@ -12,8 +12,8 @@ const ContactOption = () => {
                             <div className="contact-icon">
                                 <i> <RiMapPinLine size={20} /></i>
                             </div>
-                            <h2>our office:</h2>
-                            <p>Jurain,Dhaka Bangladesh</p>
+                            <h2>based in:</h2>
+                            <p>Villeurbanne, France</p>
                         </div>
                     </SlideUp>
                     <SlideUp delay={3}>
@@ -30,7 +30,7 @@ const ContactOption = () => {
                             <div className="contact-icon">
                                 <i> <RiMailLine size={20} /></i>
                             </div>
-                            <h2>Email us:</h2>
+                            <h2>Email:</h2>
                             <p>websitename@mail.com</p>
                         </div>
                     </SlideUp>

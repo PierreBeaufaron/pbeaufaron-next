@@ -21,10 +21,11 @@ const Summery = () => {
                         <SlideUp>
                             <div className="about-content-part">
                                 <h2>
-                                    I’m Bentos Walker, a product designer.
+                                    I’m Pierre Beaufaron, a Developer & Graphic Designer.
                                 </h2>
-                                <p>I am a San francisco-based product designer with a focus on web design, illustration, a visual development. I have a diverse range of experience having worked across various fields and industries.</p>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                                <p><strong>After earning my Web Developer certification, I’m now continuing my studies at an advanced level and actively seeking a 4-month unpaid internship, available from October 13, 2025, to February 11, 2026.</strong></p>
+                                <p>I started the program with a strong background in HTML, CSS, and JavaScript, which allowed me to quickly build on those foundations by exploring modern technologies and web frameworks. During the first year, I gained hands-on experience with PHP and Symfony, as well as TypeScript and Angular. I also completed a 4-month internship working on a full JavaScript stack including Nest.js, Prisma, and React.</p>
+                                <p>This year, the focus has shifted towards software architecture, design patterns, and unit testing, primarily using <strong>Java</strong> and the <strong>Spring framework</strong>. On the front end, we’re diving deeper into advanced <strong>Angular</strong> development.</p>
                                 <div className="hero-btns">
                                     <a href="contact.html" className="theme-btn">Get In touch<i> <RiMailSendLine size={16} /> </i></a>
                                 </div>

@@ -1619,11 +1619,10 @@ ul.extra-skills li i {
 .resume-item .content .years {
     line-height: 1;
     display: block;
-    margin-bottom: 20px;
 }
 
 .resume-item .content h4 {
-    margin: 12px 0px;
+    margin: 12px 0px 6px 0px;
     color: var(--subtitle-color);
     font-size: 20px;
 

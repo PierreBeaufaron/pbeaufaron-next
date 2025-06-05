@@ -1,5 +1,5 @@
 import React from 'react'
-import { RiBookLine } from '@remixicon/react'
+import { RiGraduationCapFill, RiBriefcaseFill  } from '@remixicon/react'
 import SlideUp from '@/utlits/animations/slideUp'
 
 const Resume = () => {
@@ -13,9 +13,12 @@ const Resume = () => {
                             <div className="single-resume">
                                 <h2>Experience</h2>
                                 <div className="experience-list">
-                                    <Card year={'2021 - Present'} title={'Web Designer'} institution={'Themeforest Market '} />
-                                    <Card year={'2021 - 2023'} title={'Marketing Expert GRP'} institution={'Envato Theme Developer'} />
-                                    <Card year={'2021 - 2022'} title={'Web Designer'} institution={'Web Developer & Business Partner'} />
+                                    <Card year={'October 2024 - Febuary 2025'} title={'Junior Developer NestJS / React'} institution={'HDM Network, Charleroi'} type={'experience'} />
+                                    <Card year={'2013 - 2023'} title={'Multimedia Designer'} institution={'Public Imprim, Vénissieux'} type={'experience'} />
+                                    <Card year={'2012'} title={'Graphic Designer'} institution={'Éditions de Saxe, Chaponost'} type={'experience'} />
+                                    <Card year={'2010 - 2012'} title={'Multimedia Designer'} institution={'Dag Import, Dardilly'} type={'experience'} />
+                                    <Card year={'Since 2010'} title={'Freelance Graphic Designer'} institution={'Collaborating with various clients'} type={'experience'} />
+                                    <Card year={'2009'} title={'Graphic Designer'} institution={'Communications department, Mairie du Creusot'} type={'experience'} />
                                 </div>
                             </div>
                         </div>
@@ -25,9 +28,12 @@ const Resume = () => {
                             <div className="experience-list">
                                 <div className="single-resume">
                                     <h2>Education</h2>
-                                    <Card year={'2013 - 2015'} title={'Bachelor Degree of Information Technology'} institution={'State University bangladesh'} />
-                                    <Card year={'2021 - 2024'} title={'Higher secoundery Education'} institution={'Premium College United VC'} />
-                                    <Card year={'2020 - 2021'} title={'UI/UX Design'} institution={'Webster College'} />
+                                    <Card year={'En cours'} title={'Certified Course – Application Designer and Developer (equivalent to a Bachelor\'s degree)'} institution={'Human Booster, Villeurbanne'} type={'education'} />
+                                    <Card year={'Febuary 2025'} title={'State-Certified – Web and Mobile Web Developer (RNCP title)'} institution={'Human Booster Villeurbanne'} type={'education'} />
+                                    <Card year={'2016'} title={'WordPress / Magento Training'} institution={'Public Imprim, delivered by Galilée, Bordeaux'} type={'education'} />
+                                    <Card year={'2010'} title={'Two-Year Technical Degree in Multimedia Graphic Design'} institution={'AFPA, Vénissieux'} type={'education'} />
+                                    <Card year={'2004  - 2006'} title={'Second Year of a Bachelor\'s Degree in Arts – Plastic Arts specialization'} institution={'Michel de Montaigne University, Bordeaux'} type={'education'} />
+                                    <Card year={'2004  - 2006'} title={'French Baccalaureate in Industrial Science and Technology (STI) – Applied Arts specialization'} institution={'Lycée Alain Colas (Secondary School), Nevers'} type={'education'} />
                                 </div>
                             </div>
                         </div>
@@ -42,12 +48,13 @@ const Resume = () => {
 export default Resume
 
 
-const Card = ({ year, title, institution }) => {
+const Card = ({ year, title, institution, type }) => {
+    const Icon = type == 'experience' ? RiBriefcaseFill : RiGraduationCapFill;
     return (
         <SlideUp>
             <div className="resume-item">
                 <div className="icon">
-                    <RiBookLine />
+                    <Icon />
                 </div>
                 <div className="content">
                     <span className="years">{year}</span>
