@@ -2,6 +2,7 @@ import React from 'react'
 import { RiMailSendLine } from '@remixicon/react'
 import SlideUp from '@/utlits/animations/slideUp'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Summery = () => {
     return (
@@ -12,7 +13,7 @@ const Summery = () => {
                     <div className="col-lg-4">
                         <SlideUp>
                             <div className="about-image-part">
-                                <img src={"/images/about/profile.png"} alt="About Me" />
+                                <Imagege width={732} height={979} style={{width:"100%", height:"auto"}} src={"/images/about/Profile.png"} alt="About Me" />
                             </div>
                         </SlideUp>
                     </div>
