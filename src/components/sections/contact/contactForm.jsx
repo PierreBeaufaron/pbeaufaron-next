@@ -1,13 +1,44 @@
+"use client";
 import React from 'react'
 import { RiMailLine } from '@remixicon/react'
 import SlideUp from '@/utlits/animations/slideUp'
+import { toast } from 'react-hot-toast';
 
 const ContactForm = () => {
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const form = e.target;
+        const data = {
+            name: form.name.value,
+            email: form.email.value,
+            message: form.message.value,
+        };
+
+        const sendingToast = toast.loading("Sending...");
+
+        const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        });
+
+        toast.dismiss(sendingToast);
+
+        if (res.ok) {
+            toast.success("Message sent!");
+            form.reset();
+        } else {
+            toast.error("Error sending the message..");
+        }
+    };
+
     return (
         <div className="col-lg-8">
             <SlideUp>
                 <div className="contact-form contact-form-area">
-                    <form className="contactForm" >
+                    <form className="contactForm" onSubmit={handleSubmit}>
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="form-group">
