@@ -7,7 +7,7 @@ import Footer from "@/components/sections/footer";
 
 export const metadata = {
   title: "Pierre Beaufaron - Developer & graphic designer",
-  description: "Pierre Beaufaron - Developer & graphic designer",
+  description: "Pierre Beaufaron - Developer & graphic designer portfolio for internship",
 };
 
 export default function RootLayout({ children }) {

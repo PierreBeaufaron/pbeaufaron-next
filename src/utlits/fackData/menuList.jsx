@@ -12,7 +12,7 @@ export const menuList = [
     {
         id: 3,
         path: "/services",
-        label: "Services"
+        label: "Skills"
     },
     {
         id: 4,

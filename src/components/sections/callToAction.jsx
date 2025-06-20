@@ -12,7 +12,7 @@ const CallToAction = () => {
                     <div className="col-lg-12">
                         <SlideUp>
                             <div className="about-content-part call-to-action-part text-center">
-                                <h2>Looking for an intern to support your development or design projects?</h2>
+                                <h2>Looking for an intern to support your development projects?</h2>
                                 <p>I'm currently seeking an internship and would be glad to contribute to your team. Feel free to reach out.</p>
                                 <div className="hero-btns">
                                     <Link href="/contact" className="theme-btn">Let's Talk  <i><RiDownloadLine size={16} /></i></Link>

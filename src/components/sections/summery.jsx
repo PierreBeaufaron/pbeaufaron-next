@@ -1,6 +1,7 @@
 import React from 'react'
 import { RiMailSendLine } from '@remixicon/react'
 import SlideUp from '@/utlits/animations/slideUp'
+import Link from 'next/link'
 
 const Summery = () => {
     return (
@@ -27,7 +28,7 @@ const Summery = () => {
                                 <p>I started the program with a strong background in HTML, CSS, and JavaScript, which allowed me to quickly build on those foundations by exploring modern technologies and web frameworks. During the first year, I gained hands-on experience with PHP and Symfony, as well as TypeScript and Angular. I also completed a 4-month internship working on a full JavaScript stack including Nest.js, Prisma, and React.</p>
                                 <p>This year, the focus has shifted towards software architecture, design patterns, and unit testing, primarily using <strong>Java</strong> and the <strong>Spring framework</strong>. On the front end, we’re diving deeper into advanced <strong>Angular</strong> development.</p>
                                 <div className="hero-btns">
-                                    <a href="contact.html" className="theme-btn">Get In touch<i> <RiMailSendLine size={16} /> </i></a>
+                                    <Link href="/contact" className="theme-btn">Get In touch<i> <RiMailSendLine size={16} /> </i></Link>
                                 </div>
                             </div>
                         </SlideUp>

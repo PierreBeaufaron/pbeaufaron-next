@@ -1465,6 +1465,10 @@ html {
     border: 1px solid var(--border-color);
 }
 
+.service-item .icon {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
 
 .service-item p {
     margin-bottom: 0;
@@ -1479,7 +1483,7 @@ html {
 }
 
 .service-item i {
-    font-size: 60px;
+    margin-right: 10px;
     color: #999;
     -webkit-transition: 0.5s;
     transition: 0.5s;
@@ -1487,6 +1491,12 @@ html {
 
 .service-item:hover {
     border-color: var(--primary-color);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.service-item:hover .icon {
+    color: var(--primary-color);
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }

@@ -32,19 +32,11 @@ const SingleProject = () => {
                         <div className="single-project-page-left wow fadeInUp delay-0-2s">
                             <div className="single-info">
                                 <p>Year</p>
-                                <h3>2024</h3>
+                                <h3>{project.date}</h3>
                             </div>
                             <div className="single-info">
                                 <p>Client</p>
-                                <h3>Bento Studio</h3>
-                            </div>
-                            <div className="single-info">
-                                <p>Services</p>
-                                <h3>Web Design</h3>
-                            </div>
-                            <div className="single-info">
-                                <p>Project</p>
-                                <h3>Creative</h3>
+                                <h3>{project.client}</h3>
                             </div>
                         </div>
                         {/* <!-- / END SINGLE LEFT DESIGN AREA --> */}
@@ -61,28 +53,24 @@ const SingleProject = () => {
                     {/* <!-- / END SINGLE RIGHT DESIGN AREA --> */}
                 </div>
                 {/* <!-- START SINGLE PAGE GALLERY DESIGN AREA --> */}
-                <div className="row pt-30">
-                    <div className="col-lg-6">
-                        <div className="single-image wow fadeInUp delay-0-2s">
-                            <Image width={633} height={679} sizes='100%' style={{width:"100%", height:"auto"}} src={"/images/projects/single-project1.jpg"} alt="gallery" />
-                        </div>
+                {project.src2 && (
+                    <div className="row pt-30">
+                        {project.src2 && (
+                            <div className="col-lg-6">
+                                <div className="single-image wow fadeInUp delay-0-2s">
+                                    <Image width={633} height={679} sizes='100%' style={{ width: "100%", height: "auto" }} src={project.src2} alt="gallery" />
+                                </div>
+                            </div>
+                        )}
+                        {project.src3 && (
+                            <div className="col-lg-6">
+                                <div className="single-image wow fadeInUp delay-0-4s">
+                                    <Image width={633} height={679} sizes='100%' style={{ width: "100%", height: "auto" }} src={project.src3} alt="gallery" />
+                                </div>
+                            </div>
+                        )}
                     </div>
-                    <div className="col-lg-6">
-                        <div className="single-image wow fadeInUp delay-0-4s">
-                            <Image width={633} height={679} sizes='100%' style={{width:"100%", height:"auto"}} src={"/images/projects/single-project2.jpg"} alt="gallery" />
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="single-image wow fadeInUp delay-0-6s">
-                            <Image width={633} height={679} sizes='100%' style={{width:"100%", height:"auto"}} src={"/images/projects/single-project3.jpg"} alt="gallery" />
-                        </div>
-                    </div>
-                    <div className="col-lg-6">
-                        <div className="single-image wow fadeInUp delay-0-8s">
-                            <Image width={633} height={679} sizes='100%' style={{width:"100%", height:"auto"}} src={"/images/projects/single-project4.jpg"} alt="gallery" />
-                        </div>
-                    </div>
-                </div>
+                )}
                 {/* <!--  / END SINGLE PAGE GALLERY DESIGN AREA --> */}
             </div>
         </div>

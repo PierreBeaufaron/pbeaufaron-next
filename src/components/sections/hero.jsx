@@ -19,8 +19,8 @@ const Hero = () => {
                                 <p>Developer & Graphic Designer</p>
                                 <div className="about-social text-center">
                                     <ul>
-                                        <li><Link href=""><RiLinkedinFill size={20} /></Link></li>
-                                        <li><Link href=""><RiGithubLine size={20} /></Link></li>
+                                        <li><Link target="_blank" href="https://www.linkedin.com/in/pierre-beaufaron-99bb754a"><RiLinkedinFill size={20} /></Link></li>
+                                        <li><Link target="_blank" href="https://github.com/PierreBeaufaron"><RiGithubLine size={20} /></Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -37,7 +37,7 @@ const Hero = () => {
                                 </h2>
                                 <div className="adress-field">
                                     <ul>
-                                        <li className='d-flex align-items-center'><i><RiCircleFill size={14} /></i> Looking for an internship focused on Java / Angular development.</li>
+                                        <li className='d-flex align-items-center'><i><RiCircleFill size={14} /></i> Looking for an internship focused on Java / Angular development (or other for frontend).</li>
                                     </ul>
                                 </div>
                                 <div className="hero-btns">
