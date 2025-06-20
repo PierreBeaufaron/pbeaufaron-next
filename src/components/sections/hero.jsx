@@ -42,7 +42,7 @@ const Hero = () => {
                                     </ul>
                                 </div>
                                 <div className="hero-btns">
-                                    <Link href="/contact" className="theme-btn">Download CV <i><RiDownloadLine size={16} /></i> </Link>
+                                    <Link href="/files/CV_PBeaufaron_Dev_2025.pdf" target="_blank" className="theme-btn">Download CV <i><RiDownloadLine size={16} /></i> </Link>
                                 </div>
                             </div>
                         </SlideUp>
