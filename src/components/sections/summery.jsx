@@ -13,7 +13,7 @@ const Summery = () => {
                     <div className="col-lg-4">
                         <SlideUp>
                             <div className="about-image-part">
-                                <Imagege width={732} height={979} style={{width:"100%", height:"auto"}} src={"/images/about/Profile.png"} alt="About Me" />
+                                <Image width={732} height={979} style={{width:"100%", height:"auto"}} src={"/images/about/Profile.png"} alt="About Me" />
                             </div>
                         </SlideUp>
                     </div>
