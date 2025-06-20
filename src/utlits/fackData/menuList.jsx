@@ -11,7 +11,7 @@ export const menuList = [
     },
     {
         id: 3,
-        path: "/services",
+        path: "/skills",
         label: "Skills"
     },
     {
