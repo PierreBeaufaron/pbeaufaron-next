@@ -4,6 +4,7 @@ import React from 'react'
 import { projectsData } from '@/utlits/fackData/projectData'
 import { useSearchParams } from 'next/navigation'
 
+// Trigger vercel redeploy again
 const SingleProject = () => {
     const searchParams = useSearchParams()
     const id = searchParams.get('id')
