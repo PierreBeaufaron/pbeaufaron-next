@@ -18,7 +18,7 @@ const ServiceGrid = () => {
                         </div>
                     </div>
                     <div className="row">
-                        <Card id={1} icon={<RiTerminalBoxLine size={60} />} title={"Development"} description={"Java / Spring, PHP / Symfony, JS / TypeScript, Nest, Angular, React / Next, MySQL"} />
+                        <Card id={1} icon={<RiTerminalBoxLine size={60} />} title={"Development"} description={"Java / Spring, PHP / Symfony, JS / TypeScript, NestJS, Angular, React / Next, MySQL"} />
                         <Card id={2} icon={<RiMacLine size={60} />} title={"Web Design"} description={"HTML, CSS, Bootstrap, Tailwind, WordPress, Figma"} />
                         <Card id={3} icon={<RiToolsFill size={60} />} title={"Tools"} description={"VS Code, IntelliJ, Git / GitHub, Dockers, Jira"} />
                         <Card id={4} icon={<RiPantoneFill size={60} />} title={"Graphic Design"} description={"Adobe InDesign, Adobe Illustrator, Adobe Photoshop, Adobe Animate, Adobe Acrobat Pro"} />
