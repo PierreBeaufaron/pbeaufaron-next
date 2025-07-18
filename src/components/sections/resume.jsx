@@ -28,7 +28,7 @@ const Resume = () => {
                             <div className="experience-list">
                                 <div className="single-resume">
                                     <h2>Education</h2>
-                                    <Card year={'En cours'} title={'Certified Course – Application Designer and Developer (equivalent to a Bachelor\'s degree)'} institution={'Human Booster, Villeurbanne'} type={'education'} />
+                                    <Card year={'In Progress'} title={'Certified Course – Application Designer and Developer (equivalent to a Bachelor\'s degree)'} institution={'Human Booster, Villeurbanne'} type={'education'} />
                                     <Card year={'Febuary 2025'} title={'State-Certified – Web and Mobile Web Developer (RNCP title)'} institution={'Human Booster Villeurbanne'} type={'education'} />
                                     <Card year={'2016'} title={'WordPress / Magento Training'} institution={'Public Imprim, delivered by Galilée, Bordeaux'} type={'education'} />
                                     <Card year={'2010'} title={'Two-Year Technical Degree in Multimedia Graphic Design'} institution={'AFPA, Vénissieux'} type={'education'} />
